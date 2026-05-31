@@ -62,6 +62,6 @@ $produto = $resultado->fetch_assoc();
     <a class="botao" href="listar.php">Voltar</a>
 </form>
 
-<script src="../assets/script.js"></script>
+<script src="<?= APP_BASE_URL ?>assets/script.js"></script>
 
 <?php require_once "../includes/footer.php"; ?>

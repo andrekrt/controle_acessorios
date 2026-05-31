@@ -54,7 +54,7 @@ $resultado = $conn->query($sql);
 <a class="botao" href="listar.php">Ver Entradas</a>
 <a class="botao" href="../produtos/listar.php">Voltar para Produtos</a>
 
-<script src="../assets/script.js"></script>
+<script src="<?= APP_BASE_URL ?>assets/script.js"></script>
 
 <script>
     $(document).ready(function() {

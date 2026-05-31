@@ -38,6 +38,6 @@ require_once "../includes/header.php";
 
 <a class="botao" href="listar.php">Voltar</a>
 
-<script src="../assets/script.js"></script>
+<script src="<?= APP_BASE_URL ?>assets/script.js"></script>
 
 <?php require_once "../includes/footer.php"; ?>

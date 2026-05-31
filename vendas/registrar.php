@@ -64,7 +64,7 @@ $resultado = $conn->query($sql);
 
 <a class="botao" href="../index.php">Voltar</a>
 
-<script src="../assets/script.js"></script>
+<script src="<?= APP_BASE_URL ?>assets/script.js"></script>
 
 <script>
     $(document).ready(function() {
