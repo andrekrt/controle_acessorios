@@ -5,10 +5,10 @@ $configLocal = __DIR__ . "/config.local.php";
 if (file_exists($configLocal)) {
     require_once $configLocal;
 } else {
-    define("DB_HOST", "localhost");
-    define("DB_USER", "root");
-    define("DB_PASS", "");
-    define("DB_NAME", "controle_bijuterias");
+    define("DB_HOST", getenv("DB_HOST") ?: "localhost");
+    define("DB_USER", getenv("DB_USER") ?: "root");
+    define("DB_PASS", getenv("DB_PASS") ?: "");
+    define("DB_NAME", getenv("DB_NAME") ?: "controle_bijuterias");
 }
 
 $conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
