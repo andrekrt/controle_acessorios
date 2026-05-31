@@ -1,0 +1,445 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f1f5;
+    margin: 0;
+    color: #333;
+}
+
+.topo {
+    background: #8a2f63;
+    color: #fff;
+    padding: 20px;
+}
+
+.topo h1 {
+    margin: 0 0 15px 0;
+}
+
+.topo nav a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    width: 90%;
+    max-width: 1240px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.card {
+    background: #f3dce9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #8a2f63;
+}
+
+.card p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.botao,
+button {
+    display: inline-block;
+    background: #8a2f63;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao:hover,
+button:hover {
+    background: #6d244e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+input,
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+table {
+    min-width: 850px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+th {
+    background: #8a2f63;
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.rodape {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+.botao-icone {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    padding: 0 !important;
+    border-radius: 8px;
+    border: none;
+    background-color: #8a2f63;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 17px;
+    margin: 0 3px;
+    vertical-align: middle;
+}
+
+.botao-icone i {
+    color: #fff;
+}
+
+.botao-icone:hover {
+    background-color: #6d244e;
+}
+
+.botao-icone.editar,
+.botao-icone.excluir {
+    background-color: #8a2f63;
+}
+
+.botao-icone.editar:hover,
+.botao-icone.excluir:hover {
+    background-color: #6d244e;
+}
+
+.dataTables_wrapper {
+    overflow-x: auto;
+}
+
+.dataTables_length,
+.dataTables_filter {
+    margin-bottom: 15px;
+}
+
+.dataTables_filter input {
+    margin-left: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.dataTables_length select {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    border-radius: 6px !important;
+    padding: 6px 10px !important;
+    margin: 2px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #8a2f63 !important;
+    color: #fff !important;
+    border: 1px solid #8a2f63 !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background: #6d244e !important;
+    color: #fff !important;
+    border: 1px solid #6d244e !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #f3dce9 !important;
+    color: #333 !important;
+    border: 1px solid #8a2f63 !important;
+}
+
+.status-pago {
+    display: inline-block;
+    background: #198754;
+    color: #fff;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.status-pendente {
+    display: inline-block;
+    background: #ffc107;
+    color: #333;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.select2-container {
+    width: 100% !important;
+}
+
+.select2-container .select2-selection--single {
+    height: 42px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 42px;
+    color: #333;
+    padding-left: 10px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 42px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .topo {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .topo h1 {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .topo nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .topo nav a {
+        margin-right: 0;
+        background: rgba(255, 255, 255, 0.15);
+        padding: 8px 10px;
+        border-radius: 6px;
+        font-size: 13px;
+    }
+
+    .container {
+        width: 95%;
+        margin: 15px auto;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+
+    form {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    input,
+    select,
+    .select2-container {
+        width: 100% !important;
+    }
+
+    .botao,
+    button {
+        padding: 9px 12px;
+        font-size: 14px;
+    }
+
+    .botao-icone {
+        width: 38px;
+        height: 38px;
+        font-size: 15px;
+        padding: 0 !important;
+    }
+
+    table {
+        min-width: 850px;
+        font-size: 13px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        white-space: nowrap;
+    }
+
+    .dataTables_wrapper {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .dataTables_length,
+    .dataTables_filter {
+        float: none !important;
+        text-align: left !important;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .dataTables_filter input {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 6px;
+    }
+
+    .dataTables_paginate {
+        float: none !important;
+        text-align: center !important;
+        margin-top: 10px;
+    }
+
+    .dataTables_info {
+        float: none !important;
+        text-align: center !important;
+        margin-top: 10px;
+    }
+
+    .select2-container .select2-selection--single {
+        height: 42px;
+    }
+
+    .rodape {
+        font-size: 13px;
+        padding: 15px;
+    }
+}
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 480px) {
+    .topo h1 {
+        font-size: 19px;
+    }
+
+    .topo nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        width: 96%;
+        padding: 12px;
+    }
+
+    .card h3 {
+        font-size: 15px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .botao {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 8px;
+    }
+
+    .botao-icone {
+        width: 36px;
+        height: 36px;
+    }
+
+    .status-pago,
+    .status-pendente {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+}
+
+.botao-icone.pago {
+    background-color: #198754;
+}
+
+.botao-icone.pago:hover {
+    background-color: #146c43;
+}
+
+td.acoes {
+    white-space: nowrap;
+    text-align: center;
+    min-width: 95px;
+}
+
+td.acoes .botao-icone {
+    display: inline-flex !important;
+    vertical-align: middle;
+    margin: 0 2px;
+}
+
+th:last-child {
+    text-align: center;
+}

@@ -1,0 +1,21 @@
+# Configurações locais
+config/config.local.php
+
+# Arquivos temporários
+*.log
+*.tmp
+*.bak
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Dependências, caso use Composer futuramente
+vendor/
+
+# Uploads ou arquivos gerados futuramente
+uploads/
